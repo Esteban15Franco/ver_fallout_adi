@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fallout con Adi ☢️</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="welcome-screen" id="welcomeScreen">
+    <h1>☢️ Bienvenida al Refugio, Adi ☢️</h1>
+    <p>Prepárate para sumergirte en un mundo postapocalíptico...<br />
+        Pero tranquila, tu <i>pixqui</i> está contigo en cada segundo ❤️
+    </p>
+    <button id="startMovie">Entrar al Refugio 🛑</button>
+</div>
+
+<div class="container" id="movieContainer" style="display:none;">
+    <h1>🎬 Fallout – Capítulo 1 🎬</h1>
+    <!-- Aquí el iframe para mostrar el video -->
+    <iframe
+            src="https://drive.google.com/file/d/1h4e-i51XdRcSzjofBCWYzkxrHrrKHfQN/preview"
+            width="800" height="450"
+            allow="autoplay" allowfullscreen>
+    </iframe>
+</div>
+
+<script>
+    const startBtn = document.getElementById('startMovie');
+    const welcomeScreen = document.getElementById('welcomeScreen');
+    const movieContainer = document.getElementById('movieContainer');
+
+    startBtn.addEventListener('click', () => {
+        welcomeScreen.style.display = 'none';
+        movieContainer.style.display = 'block';
+    });
+</script>
+</body>
+</html>
