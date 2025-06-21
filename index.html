@@ -17,23 +17,17 @@
 
 <div class="container" id="movieContainer" style="display:none;">
     <h1>🎬 Fallout – Capítulo 1 🎬</h1>
-    <!-- Aquí el iframe para mostrar el video -->
     <iframe
             src="https://drive.google.com/file/d/1h4e-i51XdRcSzjofBCWYzkxrHrrKHfQN/preview"
-            width="800" height="450"
-            allow="autoplay" allowfullscreen>
+            width="100%"
+            height="auto"
+            style="aspect-ratio: 16/9; max-width: 800px; border: 4px solid #00ff99; border-radius: 12px; box-shadow: 0 0 20px #000;"
+            allow="autoplay"
+            allowfullscreen>
     </iframe>
 </div>
 
-<script>
-    const startBtn = document.getElementById('startMovie');
-    const welcomeScreen = document.getElementById('welcomeScreen');
-    const movieContainer = document.getElementById('movieContainer');
-
-    startBtn.addEventListener('click', () => {
-        welcomeScreen.style.display = 'none';
-        movieContainer.style.display = 'block';
-    });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
+

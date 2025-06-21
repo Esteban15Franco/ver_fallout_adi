@@ -42,14 +42,6 @@ h1 {
   text-shadow: 2px 2px 4px #000;
 }
 
-video {
-  width: 90%;
-  max-width: 800px;
-  border: 4px solid #00ff99;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #000;
-}
-
 button {
   margin-top: 15px;
   padding: 12px 24px;
@@ -70,4 +62,35 @@ button:hover {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🎯 Modo celular */
+@media (max-width: 600px) {
+  .welcome-screen h1 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-screen p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
 }
