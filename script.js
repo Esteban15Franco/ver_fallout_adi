@@ -9,10 +9,14 @@ startBtn.addEventListener('click', () => {
 });
 
 function showEpisode(num) {
-  const urls = {
-    1: 'https://drive.google.com/file/d/1h4e-i51XdRcSzjofBCWYzkxrHrrKHfQN/preview',
-    2: 'https://drive.google.com/file/d/1t0k1AZBzc75PkOGmd_bf7VEhcrsxAe0p/preview'
-  };
-
-  videoFrame.src = urls[num];
+  let videoURL = '';
+  switch (num) {
+    case 1:
+      videoURL = 'https://drive.google.com/file/d/1h4e-i51XdRcSzjofBCWYzkxrHrrKHfQN/preview';
+      break;
+    case 2:
+      videoURL = 'https://drive.google.com/file/d/1t0k1AZBzc75PkOGmd_bf7VEhcrsxAe0p/preview';
+      break;
+  }
+  videoFrame.src = videoURL;
 }
