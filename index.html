@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+<!-- Pantalla de bienvenida -->
 <div class="welcome-screen" id="welcomeScreen">
     <h1>☢️ Bienvenida al Refugio, Adi ☢️</h1>
     <p>Prepárate para sumergirte en un mundo postapocalíptico...<br />
@@ -15,16 +17,23 @@
     <button id="startMovie">Entrar al Refugio 🛑</button>
 </div>
 
+<!-- Contenedor de selección de episodios -->
 <div class="container" id="movieContainer" style="display:none;">
-    <h1>🎬 Fallout – Capítulo 1 🎬</h1>
-    <iframe
-            src="https://drive.google.com/file/d/1h4e-i51XdRcSzjofBCWYzkxrHrrKHfQN/preview"
-            width="100%"
-            height="auto"
-            style="aspect-ratio: 16/9; max-width: 800px; border: 4px solid #00ff99; border-radius: 12px; box-shadow: 0 0 20px #000;"
-            allow="autoplay"
-            allowfullscreen>
-    </iframe>
+    <h1>🎬 Fallout – Elige un capítulo 🎬</h1>
+    <div class="episode-buttons">
+        <button onclick="showEpisode(1)">Capítulo 1</button>
+        <button onclick="showEpisode(2)">Capítulo 2</button>
+    </div>
+
+    <!-- Reproductor de video -->
+    <div class="video-container" id="videoContainer">
+        <iframe
+                id="videoFrame"
+                src=""
+                width="800" height="450"
+                allow="autoplay" allowfullscreen>
+        </iframe>
+    </div>
 </div>
 
 <script src="script.js"></script>
