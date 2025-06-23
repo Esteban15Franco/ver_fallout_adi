@@ -14,8 +14,8 @@ function showEpisode(num) {
     case 1:
       videoURL = 'https://drive.google.com/file/d/1h4e-i51XdRcSzjofBCWYzkxrHrrKHfQN/preview';
       break;
-    case 2:
-      videoURL = 'https://drive.google.com/file/d/1t0k1AZBzc75PkOGmd_bf7VEhcrsxAe0p/preview';
+    case 3:
+      videoURL = 'https://drive.google.com/file/d/1SdraGBaqdi16RFb0ovfWf6Y77xEsZVa9/preview';
       break;
   }
   videoFrame.src = videoURL;
