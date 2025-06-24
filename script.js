@@ -11,11 +11,11 @@ startBtn.addEventListener('click', () => {
 function showEpisode(num) {
   let videoURL = '';
   switch (num) {
-    case 1:
-      videoURL = 'https://drive.google.com/file/d/1h4e-i51XdRcSzjofBCWYzkxrHrrKHfQN/preview';
+    case 4:
+      videoURL = 'https://drive.google.com/file/d/1hnwdrVDhh28nHRp3jxS0OEJAOzktLE9e/preview';
       break;
-    case 3:
-      videoURL = 'https://drive.google.com/file/d/1SdraGBaqdi16RFb0ovfWf6Y77xEsZVa9/preview';
+    case 5:
+      videoURL = 'https://drive.google.com/file/d/1aZTpzauVcHlpI2C_-TaoJudlI4nrwt0o/preview';
       break;
   }
   videoFrame.src = videoURL;
